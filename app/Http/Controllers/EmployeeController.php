@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Attendance;
 use App\Models\Employee;
 use Illuminate\Http\Request;
 use Hash;
@@ -65,5 +66,14 @@ class EmployeeController extends Controller
     {
         $delete_employee = Employee::destroy($id);
         return Redirect::back();
+    }
+//    view just employee attendance view
+    public function view_employee_attendance()
+    {
+        $attendances = Attendance::join('employees', 'attendances.employee_id', '=', 'employees.id')
+            ->get(['attendances.*', 'employees.first_name','employees.last_name']);
+//
+
+        return view('employee.view-employee-attendance',compact('attendances'));
     }
 }

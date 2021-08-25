@@ -37,13 +37,23 @@ class AttendanceController extends Controller
 
     {
 
-//
+
         $attendances = Attendance::join('employees', 'attendances.employee_id', '=', 'employees.id')
             ->get(['attendances.*', 'employees.first_name','employees.last_name']);
-//
 
-              return view('attendance.view-attendance',compact('attendances'));
+        $present=Attendance::where('status','=','present')->count();
+
+
+        $absent =Attendance::where('status','=','absent')->count();
+        $leave =Attendance::where('status','=','leave')->count();
+        $offday =Attendance::where('status','=','off day')->count();
+
+
+
+        return view('attendance.view-attendance',compact('attendances','present','absent','leave','offday'));
     } // end method
+
+
 }
 
 

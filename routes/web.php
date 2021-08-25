@@ -53,11 +53,12 @@ Route::get('/leave/{id}', [AttendanceController::class,'leave'])->name('leave')-
 Route::get('/offday/{id}', [AttendanceController::class,'offday'])->name('offday')->middleware('IsActive');
 Route::post('/store',[AttendanceController::class,'store'])->name('store')->middleware('IsActive');
 Route::get('/view-attendance',[AttendanceController::class,'view_attendance'])->name('view')->middleware('IsActive');
+Route::get('/count_attendance',[AttendanceController::class,'count_attendance'])->name('count_attendance')->middleware('IsActive');
 
 //############################### Admin all route group End  #############################################################
 
 
-//############################### Employee  all route group start  #############################################################
+//############################### Admin Employee  all route group start  #############################################################
 // Employee InActive View
 Route::get('/employee',[EmployeeController::class,'index'])->name('manage-employee')->middleware('IsActive','HrManager');
 
@@ -79,3 +80,7 @@ Route::get('/delete-employee/{id}',[EmployeeController::class,'destroy'])->name(
 
 
 //############################### Employee  all route group End  #############################################################
+#################### Just Employee Route ######################
+
+
+Route::get('/view_employee_attendance',[EmployeeController::class,'view_employee_attendance'])->name('view_employee_attendance');

@@ -1,4 +1,4 @@
-@extends('admin.app')
+@extends('employee.app')
 @section('title','View Attendance')
 
 @section('content')
@@ -8,52 +8,23 @@
             <h4 class="page-title">@yield('title')</h4>
         </div>
         <div class="col-sm-3 ">
-                    <div class="btn-group float-sm-right">
-                        <a href="{{route('attendance_index')}}" type="button" class="btn btn-primary waves-effect waves-light"><i data-feather="check-square"></i> Add Attendance</a>
-                    </div>
-                </div>
+            <div class="btn-group float-sm-right">
+                <a href="{{route('redirects')}}" type="button" class="btn btn-primary waves-effect waves-light"><i data-feather="home"></i> Dashboard</a>
+            </div>
+        </div>
     </div>
 
     <div class="row">
         <div class="col-12 col-lg-12">
 
-
-
             <div class="card">
 
-                    <div class="card-header border-0">
-                        <div class="row">
-                            <div class="col-sm-12 ">
-                                <button type="button" class="btn btn-sm btn-success ">
-                                    Present <span  class="badge badge-dark">{{$present}}</span>
-                                </button>
 
-                                <button type="button" class="btn btn-sm btn-danger ">
-                                    Absent <span  class="badge badge-dark">{{$absent}}</span>
-                                </button>
-                                <button type="button" class="btn btn-sm btn-warning ">
-                                    Leave <span  class="badge badge-dark">{{$leave}}</span>
-                                </button>
-
-                                <button type="button" class="btn btn-sm btn-info ">
-                                    Off Day <span  class="badge badge-dark">{{$offday}}</span>
-                                </button>
-
-
-                            </div>
-                            </div>
-                        <div class="row">
-
-
-                                <input type="date"  required name="date" class="form-control text-right" style="text-align: right">
+                    <div class="card-header border-0">@yield('title')
+                        <div class="col-12 col-sm-6">
 
 
                         </div>
-
-
-                        </div>
-
-
                     </div>
 
                     <div class="table-responsive">
@@ -68,7 +39,6 @@
                             </thead>
                             <tbody>
 
-
                             @foreach($attendances as $attendance)
 
                                 <tr>
@@ -78,18 +48,13 @@
                                     <td>
                                     @if($attendance->status =='present')
 
-
-                                            <span class="btn btn-sm btn-success">{{ $attendance->status}}</span>
+                                        <span class="btn btn-sm btn-success">{{ $attendance->status}}</span>
                                         @elseif($attendance->status =='absent')
-
                                         <span class="btn btn-sm btn-danger">{{ $attendance->status}}</span>
 
                                         @elseif($attendance->status =='leave')
-
-
-                                            <span class="btn btn-sm btn-warning">{{ $attendance->status}}</span>
+                                        <span class="btn btn-sm btn-warning">{{ $attendance->status}}</span>
                                         @elseif($attendance->status =='off day')
-
                                         <span class="btn btn-sm btn-info">{{ $attendance->status}}</span>
                                     @endif
                                     </td>

@@ -9,7 +9,7 @@
         </div>
         <div class="col-sm-3 ">
             <div class="btn-group float-sm-right">
-                <a href="#" type="button" class="btn btn-primary waves-effect waves-light"><i data-feather="check-square"></i> View Attendance</a>
+                <a href="{{ route('view') }}" type="button" class="btn btn-primary waves-effect waves-light"><i data-feather="check-square"></i> View Attendance</a>
             </div>
         </div>
     </div>
