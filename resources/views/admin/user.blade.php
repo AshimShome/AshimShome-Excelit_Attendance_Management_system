@@ -37,8 +37,19 @@
                                                         <td>{{$user->id}}</td>
                                                         <td>{{$user->name}}</td>
                                                         <td>{{$user->email}}</td>
-                                                        <td>{{$user->role==='1'?'Admin':'User'}}</td>
-                                                        <td>
+                                                        @if($user->role=='1')
+                                                        <td>Admin</td>
+                                                        @elseif($user->role=='2')
+                                                        <td>Manager</td>
+                                                          @elseif($user->role=='3')
+                                                           <td>Hr Manager</td>
+                                                                @else
+                                                                    <td>User</td>
+                                                                @endif
+
+
+
+                                                                    <td>
                                                         @if($user->status == 1)
                                                             <span class="badge badge-success">Active</span>
                                                         @else

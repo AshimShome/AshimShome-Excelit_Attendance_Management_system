@@ -40,8 +40,9 @@
                             <select id="user_role" name="role"class="form-control">
                                 <option value="0">Select User Role</option>
                                 <option value="1">ADMIN</option>
-
-                                    <option value="0">User</option>
+                                <option value="2">Manager</option>
+                                <option value="3">Hr Manager</option>
+                                <option value="0">User</option>
 
 
                             </select>

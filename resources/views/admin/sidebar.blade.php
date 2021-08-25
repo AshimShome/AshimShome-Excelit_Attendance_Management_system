@@ -39,6 +39,9 @@
 
         </ul>
 
+{{--        @if(!auth()->user()->role==2 && !auth()->user()->role==3 )--}}
+        @if(auth()->user()->role==1)
+
         <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
 
             <li class=" nav-item"><a class="d-flex align-items-center" href="{{ route('user') }}"><i class="fas fa-user" aria-hidden="true">
@@ -46,21 +49,31 @@
                     </i><span class="menu-title text-truncate">User List</span></a></li>
 
         </ul>
+
+        @endif
+        @if(auth()->user()->role==1 || auth()->user()->role==2)
+
         <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
 
             <li class=" nav-item"><a class="d-flex align-items-center" href="{{route('manage-employee')}}">
                     <i class="fas fa-user" aria-hidden="true"></i><span class="menu-title text-truncate">Manage Employee</span></a></li>
 
         </ul>
+        @endif
+        @if(!auth()->user()->role==0)
 
         <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
             <li class=" nav-item"><a class="d-flex align-items-center" href="index.html"><i data-feather="check-square"></i><span class="menu-title text-truncate" data-i18n="Dashboards">Attendance</span><span class="badge badge-light-warning badge-pill ml-auto mr-1">2</span></a>
                 <ul class="menu-content">
                     <li><a class="d-flex align-items-center" href="{{route('attendance_index')}}"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Analytics">Add Attendance</span></a>
                     </li>
-                    <li class="active"><a class="d-flex align-items-center" href="#"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="eCommerce">View Attendance</span></a>
+                    <li class="active"><a class="d-flex align-items-center" href="{{ route('view') }}"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="eCommerce">View Attendance</span></a>
                     </li>
                 </ul>
+            </li>
+        </ul>
+        @endif
     </div>
+
 </div>
 <!-- END: Main Menu-->

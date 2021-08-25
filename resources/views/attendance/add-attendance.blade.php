@@ -52,7 +52,7 @@
 
                                     <div class="form-check-inline">
                                         <label class="form-check-label">
-                                            <input type="radio" checked value="preaent" name="status[{{$employees->id}}]">
+                                            <input type="radio" checked value="present" name="status[{{$employees->id}}]">
                                             <span class="btn btn-sm btn-success">Present</span>
                                         </label>
                                     </div>

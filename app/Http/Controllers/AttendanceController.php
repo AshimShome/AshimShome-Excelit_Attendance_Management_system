@@ -29,7 +29,21 @@ class AttendanceController extends Controller
                 "date" => $request->date,
             ]);
         }
+        return redirect()->back();
     }
+
+    // employee attendance view
+    public function view_attendance()
+
+    {
+
+//
+        $attendances = Attendance::join('employees', 'attendances.employee_id', '=', 'employees.id')
+            ->get(['attendances.*', 'employees.first_name','employees.last_name']);
+//
+
+              return view('attendance.view-attendance',compact('attendances'));
+    } // end method
 }
 
 

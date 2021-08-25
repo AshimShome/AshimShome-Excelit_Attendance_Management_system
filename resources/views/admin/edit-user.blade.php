@@ -40,6 +40,8 @@
                             <select id="user_role" name="role"class="form-control">
                                 <option value="">Select User Role</option>
                                 <option value="1" {{ ($edit_user->role=="1")?"selected":" " }}>Admin</option>
+                                <option value="2" {{ ($edit_user->role=="2")?"selected":" " }}>Manager</option>
+                                <option value="3" {{ ($edit_user->role=="3")?"selected":" " }}>Hr Manager</option>
                                 <option value="0"  {{ ($edit_user->role=="0")?"selected":" " }}>User</option>
                             </select>
                         </div>
