@@ -36,6 +36,8 @@
                 </div>
             @endif
 
-{{--  End nav bar         --}}
+  End nav bar
     </body>
 </html>
+
+

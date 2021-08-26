@@ -9,7 +9,7 @@ use App\Http\Controllers\AttendanceController;
 
 
 Route::get('/', function () {
-    return view('index');
+    return view('auth.login');
 });
 
 
@@ -55,6 +55,8 @@ Route::post('/store',[AttendanceController::class,'store'])->name('store')->midd
 Route::get('/view-attendance',[AttendanceController::class,'view_attendance'])->name('view')->middleware('IsActive');
 Route::get('/count_attendance',[AttendanceController::class,'count_attendance'])->name('count_attendance')->middleware('IsActive');
 
+Route::get('/edit-attendance/{employee_id}/{date}',[AttendanceController::class,'edit_attendance'])->name('edit-attendance')->middleware('IsActive');
+Route::post('/update-attendance/{employee_id}/{date}',[AttendanceController::class,'update_attendance'])->name('update-attendance')->middleware('IsActive');
 //############################### Admin all route group End  #############################################################
 
 

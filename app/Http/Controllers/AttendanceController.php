@@ -52,6 +52,23 @@ class AttendanceController extends Controller
 
         return view('attendance.view-attendance',compact('attendances','present','absent','leave','offday'));
     } // end method
+    public  function  edit_attendance($employee_id,$date)
+    {
+
+         $edit_employee_status = Attendance::select('employee_id','date','status')->where('employee_id','=',$employee_id)->where('date','=',$date)->first();
+
+        return view('attendance.edit-attendance',compact('edit_employee_status'));
+    }
+    public function update_attendance(Request  $request,$empleoyee_id,$date)
+    {
+
+
+
+        $update_status = Attendance::all()->where('employee_id','=',$empleoyee_id)->where('date','=',$date)->first();
+        $update_status->status= $request->status;
+        $update_status->update();
+        return Redirect::route('view');
+    }
 
 
 }

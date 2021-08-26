@@ -64,6 +64,7 @@
                                 <th>Name</th>
                                 <th>Date</th>
                                 <th>Status</th>
+                                <th>Action</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -93,6 +94,11 @@
                                         <span class="btn btn-sm btn-info">{{ $attendance->status}}</span>
                                     @endif
                                     </td>
+
+                                    <td>
+                                    <a href="{{ route('edit-attendance',[$attendance->employee_id,$attendance->date]) }}" class="btn btn-sm btn-dark"><i class="fa fa-edit"></i></a>
+                                    </td>
+
                                 </tr>
                             @endforeach
 

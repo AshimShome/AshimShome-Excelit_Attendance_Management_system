@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="83e84b77-069f-4363-a3d2-c487fd4806d3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/employee/view-employee-attendance.blade.php" afterDir="false" />
+    <list default="true" id="943e555c-126b-4d91-b997-4faedc36aa1f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AttendanceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AttendanceController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/EmployeeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/EmployeeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/attendance/add-attendance.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/attendance/add-attendance.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/attendance/view-attendance.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/attendance/view-attendance.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/employee/add-employee.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/employee/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/employee/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/employee/edit-employee.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/employee/manage-employee.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/employee/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/employee/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -153,8 +147,7 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
     </include_path>
   </component>
-  <component name="ProjectId" id="1x7Fp91r5iVAzJszgNTtlEU2ibg" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1xFlA2BMMx9Ouf8AWjQzEocU9xR" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -163,14 +156,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/employee" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\xampp_2021\htdocs\Excelit_Ams\resources\views\employee" />
-    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -181,46 +168,17 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="83e84b77-069f-4363-a3d2-c487fd4806d3" name="Default Changelist" comment="" />
-      <created>1629698400777</created>
+      <changelist id="943e555c-126b-4d91-b997-4faedc36aa1f" name="Default Changelist" comment="" />
+      <created>1629958569692</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1629698400777</updated>
-      <workItem from="1629698425091" duration="16234000" />
-      <workItem from="1629779044305" duration="18891000" />
-      <workItem from="1629863892304" duration="23013000" />
+      <updated>1629958569692</updated>
+      <workItem from="1629958578833" duration="1367000" />
+      <workItem from="1629960009270" duration="14519000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/resources/views/attendance/add-attendance.blade.php</url>
-          <line>88</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/app/Http/Controllers/AttendanceController.php</url>
-          <line>40</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
