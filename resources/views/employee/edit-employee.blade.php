@@ -52,10 +52,7 @@
                             <label for="password">Password</label>
                             <input type="password" class="form-control" name="password" id="password" value="{{$edit_employee->password}}" placeholder="Enter Password">
                         </div>
-{{--                        <div class="form-group">--}}
-{{--                            <label for="confirm_password">Confirm Password</label>--}}
-{{--                            <input type="password" class="form-control"name="password_confirmation" id="confirm_password" placeholder="Confirm Password">--}}
-{{--                        </div>--}}
+
                         <div class="form-group text-right mb-0">
                             <button type="submit" class="btn btn-primary px-5"><i class="icon-check"></i> Update Employee</button>
                         </div>

@@ -26,7 +26,7 @@
                                     </g>
                                 </g>
                             </svg></span>
-                    <h2 class="brand-text">Vuexy</h2>
+                    <h2 class="brand-text">Excel It Ai AMS</h2>
                 </a></li>
             <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="d-block d-xl-none text-primary toggle-icon font-medium-4" data-feather="x"></i><i class="d-none d-xl-block collapse-toggle-icon font-medium-4  text-primary" data-feather="disc" data-ticon="disc"></i></a></li>
         </ul>
@@ -39,7 +39,6 @@
 
         </ul>
 
-{{--        @if(!auth()->user()->role==2 && !auth()->user()->role==3 )--}}
         @if(auth()->user()->role==1)
 
         <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">

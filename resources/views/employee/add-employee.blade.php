@@ -17,7 +17,6 @@
         <div class="col-lg-8">
             <div class="card">
                 <div class="card-body">
-                    {{--                    <div class="card-title">@yield('title')</div>--}}
                     <hr>
 
                     <form action="{{ route('store-employee') }}"method="post" id="myform">

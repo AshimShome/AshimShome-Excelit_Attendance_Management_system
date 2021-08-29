@@ -3,11 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="e2679d41-bba0-40ba-9f3e-70202342dcb5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/edit-user.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/edit-user.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/employee/add-employee.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/employee/add-employee.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/employee/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/employee/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/employee/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/employee/dashboard.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/employee/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/employee/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/employee/edit-employee.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/employee/edit-employee.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +174,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1630209289198</updated>
-      <workItem from="1630209322162" duration="7065000" />
+      <workItem from="1630209322162" duration="8157000" />
     </task>
     <servers />
   </component>
