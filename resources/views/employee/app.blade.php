@@ -18,6 +18,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('app-assets/vendors/css/vendors.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('app-assets/vendors/css/charts/apexcharts.css') }}">
 {{--    <link rel="stylesheet" type="text/css" href="{{ asset('app-assets/vendors/css/extensions/toastr.min.css') }}">--}}
+    <link href="{{asset('public/admin/assets/datatables/jquery.dataTables.min.css')}}" rel="stylesheet" type="text/css" />
 
     <!-- END: Vendor CSS-->
 
@@ -54,6 +55,7 @@
     <!---- Start  Fontawosome --->
     <link rel="stylesheet" href="{{ asset('app-assets/fonts/font-awesome/css/font-awesome.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('app-assets/fonts/font-awesome/css/font-awesome.css') }}" />
+    <link rel="stylesheet" href="{{ asset('app-assets/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}">
 
     <!---- End  Fontawosome --->
 </head>
@@ -118,7 +120,22 @@
 <!-- BEGIN: Page JS-->
 <script src="{{ asset('app-assets/js/scripts/pages/dashboard-ecommerce.js')}}"></script>
 <!-- END: Page JS-->
-
+<script src="{{ asset('app-assets/plugins/datatables/jquery.dataTables.min.js') }}"></script>
+<script src="{{ asset('app-assets/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
+<script>
+    $(function () {
+        $("#example1").DataTable();
+        $('#example2').DataTable({
+            "paging": true,
+            "lengthChange": false,
+            "searching": false,
+            "ordering": true,
+            "info": true,
+            "autoWidth": false,
+            "responsive": true,
+        });
+    });
+</script>
 <script>
     $(window).on('load', function() {
         if (feather) {

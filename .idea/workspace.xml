@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="943e555c-126b-4d91-b997-4faedc36aa1f" name="Default Changelist" comment="">
+    <list default="true" id="e2679d41-bba0-40ba-9f3e-70202342dcb5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AttendanceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AttendanceController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/attendance/view-attendance.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/attendance/view-attendance.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/employee/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/employee/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/employee/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/employee/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/employee/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/employee/header.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -147,7 +147,8 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
     </include_path>
   </component>
-  <component name="ProjectId" id="1xFlA2BMMx9Ouf8AWjQzEocU9xR" />
+  <component name="ProjectId" id="1xNxL4BaLejS57uzlyWT1yMIBUz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -168,13 +169,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="943e555c-126b-4d91-b997-4faedc36aa1f" name="Default Changelist" comment="" />
-      <created>1629958569692</created>
+      <changelist id="e2679d41-bba0-40ba-9f3e-70202342dcb5" name="Default Changelist" comment="" />
+      <created>1630209289198</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1629958569692</updated>
-      <workItem from="1629958578833" duration="1367000" />
-      <workItem from="1629960009270" duration="14519000" />
+      <updated>1630209289198</updated>
+      <workItem from="1630209322162" duration="7065000" />
     </task>
     <servers />
   </component>
